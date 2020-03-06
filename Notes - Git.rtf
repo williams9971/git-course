@@ -32,6 +32,7 @@
 \pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
 \ls1\ilvl0
 \f2\b0 \cf0 \ulnone {\listtext	1)	}Never work on the Master Branch. Create a unique branch to work from.\
+{\listtext	2)	}Always merge your Master branch into feature, not feature in Master. Master is your actual application. If you have problems in your feature and put it into the Master you will break your main website. Always keep it free of conflicts. Merge the master to \ul YOUR \ulnone branch.\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 \cf0 \
 \
@@ -105,7 +106,7 @@
 \f3 \uc0\u9642 
 \f2 	}
 \f0\b git branch -av 
-\f2\b0 - will show a list of all of the branches\
+\f2\b0 - will show a list of all of the branches with details.\
 {\listtext	
 \f3 \uc0\u9642 
 \f2 	}
@@ -116,6 +117,16 @@
 \f2 	}
 \f0\b git checkout -b <branchname> 
 \f2\b0 - this will create a new branch / copy from the branch you\'92re currently on and switch you to the newly created branch.\
+{\listtext	
+\f3 \uc0\u9642 
+\f2 	}
+\f0\b git branch -d <branchname>
+\f2\b0  - this will delete a branch\
+{\listtext	
+\f3 \uc0\u9642 
+\f2 	}
+\f0\b git merge <branchname>
+\f2\b0  - this will merge the branch you desire to the branch you\'92re currently in.\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 \cf0 \
 \
