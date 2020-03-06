@@ -5,8 +5,10 @@
 \red0\green0\blue0;\red251\green251\blue249;\red61\green52\blue46;}
 {\*\expandedcolortbl;;\cssrgb\c0\c0\c93333;\cssrgb\c12941\c13725\c21961;\cssrgb\c97255\c97255\c98039;
 \cssrgb\c0\c0\c0;\cssrgb\c98824\c98824\c98039;\cssrgb\c30588\c26667\c23529;}
-{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid1\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\})}{\leveltext\leveltemplateid1\'02\'00);}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid101\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid102\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid201\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
@@ -16,16 +18,29 @@
 \pard\pardeftab720\sl280\partightenfactor0
 {\field{\*\fldinst{HYPERLINK "https://git-scm.com/docs"}}{\fldrslt 
 \f1\b0 \cf2 \expnd0\expndtw0\kerning0
-\ul \ulc2 \outl0\strokewidth0 \strokec2 https://git-scm.com/docs}}\ul \
+\ul \ulc2 \outl0\strokewidth0 \strokec2 https://git-scm.com/docs}}
+\f1\b0 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 \outl0\strokewidth0 \strokec2 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0 \ulc0 \
+
+\f0\b \cf0 \kerning1\expnd0\expndtw0 \ulc0 \outl0\strokewidth0 \
 \ulnone cmd + shift + period
 \f2\b0  = shows hidden files\
 \
-\ul CLI (Command Line)\
+
+\f0\b \ul Tips\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0
+\f2\b0 \cf0 \ulnone {\listtext	1)	}Never work on the Master Branch. Create a unique branch to work from.\
+{\listtext	2)	}Always merge your Master branch into feature, not feature in Master. Master is your actual application. If you have problems in your feature and put it into the Master you will break your main website. Always keep it free of conflicts. Merge the master to \ul YOUR \ulnone branch.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \ul \ulc0 CLI (Command Line)\
 \
 \pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
-\ls1\ilvl0\cf0 \ulnone {\listtext	
+\ls2\ilvl0\cf0 \ulnone {\listtext	
 \f3 \uc0\u9642 
 \f2 	}
 \f0\b git init 
@@ -50,14 +65,22 @@
 \f2 	}
 \f0\b \cf3 \cb4 \expnd0\expndtw0\kerning0
 \outl0\strokewidth0 \strokec3 git commit -am "commit message" 
-\f2\b0 - A power user shortcut command that combines the -a and -m options. This combination immediately creates a commit of all the staged changes and takes an inline commit message.\
-\ls1\ilvl0\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2\b0 - A power user shortcut command that combines the -a and -m options. This combination immediately creates a commit of all the staged changes and takes an inline commit message. \
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls2\ilvl1\cf3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8259 	}If you forget to type -am you will enter in the Virtual editor to add your comment. To exit and save hit the esc key, then type 
+\f0\b :wq\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b0 \cf3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 \
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls3\ilvl0\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
 \f3 \uc0\u9642 
 \f2 	}
 \f0\b \cf5 \cb6 \expnd0\expndtw0\kerning0
 \outl0\strokewidth0 \strokec7 git diff
 \f2\b0  - Show changes between commits, commit and working tree, etc\
-\ls1\ilvl0\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\ls3\ilvl0\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
 \f3 \uc0\u9642 
 \f2 	}
 \f0\b git log 
@@ -74,6 +97,31 @@
 \f2 	}
 \f0\b git blame <filename> 
 \f2\b0 - let\'92s you see who made changes / commits to a certain file.\
+{\listtext	
+\f3 \uc0\u9642 
+\f2 	}
+\f0\b git branch 
+\f2\b0 - this command creates a new branch to work from. This essentially creates a copy of the branch you\'92re currently working in.\
+{\listtext	
+\f3 \uc0\u9642 
+\f2 	}
+\f0\b git branch -av 
+\f2\b0 - will show a list of all of the branches with details.\
+{\listtext	
+\f3 \uc0\u9642 
+\f2 	}
+\f0\b git checkout <branchname> 
+\f2\b0 - this will switch to the branch you wish to work from.\
+{\listtext	
+\f3 \uc0\u9642 
+\f2 	}
+\f0\b git checkout -b <branchname> 
+\f2\b0 - this will create a new branch / copy from the branch you\'92re currently on and switch you to the newly created branch.\
+{\listtext	
+\f3 \uc0\u9642 
+\f2 	}
+\f0\b git branch -d <branchname>
+\f2\b0  - this will delete a branch\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 \cf0 \
 \
